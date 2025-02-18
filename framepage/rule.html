@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="framepage-style.css"/>
+    <link rel="stylesheet" href="../framework/anijs.css"/>
+
+    <title>rule</title>
+</head>
+<body>
+    <p id="title">
+        <img src="../img/home photo2.png" alt="ball" id="ball">
+        規則介紹
+    </p>
+    <div class="flex-row" id="page-container">
+        <div id="list-btn">
+            <div id="in-list"class="flex-column">
+                <div class="btn-container">
+                    <button class="btn">場地的設計</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">隊伍的定義</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">守備方任務</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">進攻方任務</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">賽事的進行</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="content-out" class="flex-column" data-anijs="if: click, on:.btn, do: zoomIn animated">
+            <div id="content">
+                <div id="content-container">
+                    <div class="content-in">
+                        <img src="../img/rule0-.png" alt="rule0" class="content-photo">
+                    </div>  
+                    <div class="content-in">
+                        <img src="../img/rule1-.png" alt="rule1" class="content-photo">
+                    </div>
+                    <div class="content-in">
+                        <img src="../img/rule2-.png" alt="rule2" class="content-photo">
+                    </div>
+                    <div class="content-in">
+                        <img src="../img/rule3-.png" alt="rule3" class="content-photo">
+                    </div>
+                    <div class="content-in">
+                        <img src="../img/rule4-.png" alt="rule4" class="content-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="rule-main.js"></script>
+    <script src="../framework/anijs-min.js"></script>
+</body>
+</html>

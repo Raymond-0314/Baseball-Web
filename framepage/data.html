@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="framepage-style.css"/>
+    <link rel="stylesheet" href="../framework/anijs.css"/>
+
+    <title>data</title>
+</head>
+<body>
+    <p id="title">
+        <img src="../img/home photo2.png" alt="ball" id="ball">
+        投打數據
+    </p>
+    <div class="flex-row" id="page-container">
+        <div id="list-btn">
+            <div id="in-list"class="flex-column">
+                <div class="btn-container">
+                    <button class="btn">數據簡介</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">IsoP/OPS</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">ERA+/好壞球比</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">SO/BB/HR%</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">投手獨立指數</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="content-out" class="flex-column" data-anijs="if: click, on:.btn, do: zoomIn animated">
+        <div id="content">
+            <div id="content-container">
+                <div class="content-in">
+                    <div class="flex-container flex-row">
+                        <div class="content-data-l">
+                            <img src="../img/data0-.png" alt="data0" class="data-photo">
+                        </div>
+                        <div class="content-data-r flex-column">
+                            <div class="cal flex-row">
+                                H
+                                <input type="number" class="data-input" id="h" value="1" min="0">
+                                AB
+                                <input type="number" class="data-input" id="ab" value="1" min="1">
+                                <input type="button" class="data-cal" id="avg-cal" value="計算打擊率">
+                                <!--<input type="number" class="data-input" id="avg-ans">-->
+                                <div id="avg-ans" class="ans"data-anijs="if: click, on:#avg-cal, do: swing animated">1.000</div>
+                            </div>
+                            <div class="cal flex-row">
+                                BB
+                                <input type="number" class="data-input" id="bb" value="1" min="0">
+                                HB
+                                <input type="number" class="data-input" id="hb" value="1" min="0">
+                                SF
+                                <input type="number" class="data-input" id="sf" value="1" min="0">
+                                <input type="button" class="data-cal" id="obp-cal" value="計算上壘率">
+                                <div id="obp-ans" class="ans" data-anijs="if: click, on:#obp-cal, do: swing animated">0.750</div>
+                            </div>
+                            <div class="cal flex-row">
+                                1B
+                                <input type="number" class="data-input" id="1b" value="1" min="0">
+                                2B
+                                <input type="number" class="data-input" id="2b" value="1" min="0">
+                                3B
+                                <input type="number" class="data-input" id="3b" value="1" min="0">
+                                HR
+                                <input type="number" class="data-input" id="hr" value="1" min="0">
+                                <input type="button" class="data-cal" id="slg-cal" value="計算長打率">
+                                <div id="slg-ans" class="ans" data-anijs="if: click, on:#slg-cal, do: swing animated">10.000</div>
+                            </div>
+                            <div id="seperate"></div>
+                            <div class="cal flex-row">
+                                ER
+                                <input type="number" class="data-input" id="er" value="1" min="0">
+                                IP
+                                <input type="number" class="data-input" id="ip" value="1" min="0">
+                                <input type="button" class="data-cal" id="era-cal" value="計算防禦率">
+                                <div id="era-ans" class="ans" data-anijs="if: click, on:#era-cal, do: swing animated">9.00</div>
+                            </div>
+                            <div class="cal flex-row">
+                                H
+                                <input type="number" class="data-input" id="h-p" value="1" min="0">
+                                BB
+                                <input type="number" class="data-input" id="bb-p" value="1" min="0">
+                                <input type="button" class="data-cal" id="whip-cal" value="計算WHIP">
+                                <div id="whip-ans" class="ans" data-anijs="if: click, on:#whip-cal, do: swing animated">2.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-in">
+                    <div class="flex-container flex-row">
+                        <div class="content-data-l">
+                            <img src="../img/data1-.png" alt="data1" class="data-photo">
+                        </div>
+                        <div class="content-data-r flex-column">
+                            <div class="cal flex-row">
+                                SLG
+                                <input type="number" class="data-input" id="slg" value="1" min="0">
+                                AVG
+                                <input type="number" class="data-input" id="avg" value="1" min="0">
+                                <input type="button" class="data-cal" id="isop-cal" value="計算IsoP">
+                                <div id="isop-ans" class="ans" data-anijs="if: click, on:#isop-cal, do: swing animated">0.000</div>
+                            </div>
+                            <div class="cal flex-row">
+                                OBP
+                                <input type="number" class="data-input" id="obp" value="1" min="0">
+                                <input type="button" class="data-cal" id="ops-cal" value="計算OPS">
+                                <div id="ops-ans" class="ans" data-anijs="if: click, on:#ops-cal, do: swing animated">2.000</div>
+                            </div>
+                            <div class="cal flex-row">
+                                聯盟平均OBP
+                                <input type="number" class="data-input" id="av-obp" value="1" min="0">
+                                聯盟平均SLG
+                                <input type="number" class="data-input" id="av-slg" value="1" min="0">
+                                <input type="button" class="data-cal" id="opsp-cal" value="計算OPS+">
+                                <div id="opsp-ans" class="ans" data-anijs="if: click, on:#opsp-cal, do: swing animated">100.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-in">
+                    <div class="flex-container flex-row">
+                        <div class="content-data-l">
+                            <img src="../img/data2-.png" alt="data2" class="data-photo">
+                        </div>
+                        <div class="content-data-r flex-column">
+                            <div class="cal flex-row">
+                                聯盟平均ERA
+                                <input type="number" class="data-input" id="av-era" value="1" min="0">
+                                ERA
+                                <input type="number" class="data-input" id="era" value="1" min="0">
+                                <input type="button" class="data-cal" id="erap-cal" value="計算ERA+">
+                                <div id="erap-ans" class="ans" data-anijs="if: click, on:#erap-cal, do: swing animated">100.00</div>
+                            </div>
+                            <div class="cal flex-row">
+                                總投球數
+                                <input type="number" class="data-input" id="p" value="1" min="1">
+                                好球數
+                                <input type="number" class="data-input" id="p-strike" value="0" min="0">
+                                <input type="button" class="data-cal" id="s-cal" value="計算好壞球比">
+                                <div id="s-ans" class="ans" data-anijs="if: click, on:#s-cal, do: swing animated">0.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-in">
+                    <div class="flex-container flex-row">
+                        <div class="content-data-l">
+                            <img src="../img/data3-.png" alt="data3" class="data-photo">
+                        </div>
+                        <div class="content-data-r flex-column">
+                            <div class="cal flex-row">
+                                面對打者
+                                <input type="number" class="data-input" id="n-h" value="1" min="1">
+                                三振
+                                <input type="number" class="data-input" id="s" value="1" min="0">
+                                <input type="button" class="data-cal" id="so-cal" value="計算SO%">
+                                <div id="so-ans" class="ans" data-anijs="if: click, on:#so-cal, do: swing animated">100.0</div>
+                            </div>
+                            <div class="cal flex-row">
+                                四壞
+                                <input type="number" class="data-input" id="b" value="1" min="0">
+                                <input type="button" class="data-cal" id="bbp-cal" value="計算BB%">
+                                <div id="bbp-ans" class="ans" data-anijs="if: click, on:#bbp-cal, do: swing animated">100.0</div>
+                            </div>
+                            <div class="cal flex-row">
+                                全壘打
+                                <input type="number" class="data-input" id="hr-" value="1" min="0">
+                                <input type="button" class="data-cal" id="hrp-cal" value="計算HR%">
+                                <div id="hrp-ans" class="ans" data-anijs="if: click, on:#hrp-cal, do: swing animated">100.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-in">
+                    <div class="flex-container flex-row">
+                        <div class="content-data-l">
+                            <img src="../img/data4-.png" alt="data4" class="data-photo">
+                        </div>
+                        <div class="content-data-r flex-column">
+                            <div class="cal flex-row">
+                                BB
+                                <input type="number" class="data-input" id="fip-bb" value="1" min="0">
+                                觸身球
+                                <input type="number" class="data-input" id="fip-hb" value="1" min="0">
+                                HR
+                                <input type="number" class="data-input" id="fip-hr" value="1" min="0">
+                                三振
+                                <input type="number" class="data-input" id="fip-so" value="1" min="0">
+                                IP
+                                <input type="number" class="data-input" id="fip-ip" value="1" min="0">
+                            </div>
+                            <div class="cal flex-row">
+                                <input type="button" class="data-cal" id="fip-cal" value="計算FIP">
+                                <div id="fip-ans" class="ans" data-anijs="if: click, on:#fip-cal, do: swing animated">20.20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="data-main.js"></script>
+    <script src="data-cal-main.js"></script>
+    <script src="../framework/anijs-min.js"></script>
+</body>
+</html>

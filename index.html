@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>棒球網</title>
+        <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="index-style.css"/>
+        <link rel="stylesheet" href="framework/jquery.mobile-1.2.1.min.css"/> <!--css part-->
+        
+
+	    <script src="framework/jquery-1.6.4.min.js"></script>
+	    <script src="framework/jquery.mobile-1.2.1.min.js"></script>
+        
+
+	    <!--<link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css"/>
+	    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+	    <script src="https://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>-->
+    </head>
+    <body>
+    
+    <!--home-------------------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="home">
+
+	    <div data-role="header">
+    		<h1>棒球網</h1>
+    	</div><!-- /header -->
+
+	    <div data-role="content" class="content">
+    		<div align="center">
+                <img src="img/home photo.png" alt="homephoto" height="400px">
+                <p align="center">本棒球網以介紹棒球基本規則、投打數據、投手球種、中華職棒為目標</p>
+                <p align="center">2022</p>
+            </div>
+    	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+    		<div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">首頁</a></li>
+                    <li><a href="#list" data-icon="grid">內容列表</a></li>
+                </ul>
+            </div><!-- /navbar -->
+    	</div><!-- /footer -->
+    </div>
+
+
+
+
+    <!--list-------------------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="list">
+
+	    <div data-role="header">
+    		<h1>棒球網</h1>
+    	</div><!-- /header -->
+
+	    <div data-role="content" class="content">
+    		<div align="center">
+                <div>
+                    <a href="#rule" data-role="button" data-inline="true">規則介紹</a>
+                </div>
+                <div>
+                    <a href="#data" data-role="button" data-inline="true">投打數據</a>
+                </div>
+                <div>
+                    <a href="#pitch" data-role="button" data-inline="true">投手球種</a>
+                </div>
+                <div>
+                    <a href="#cpbl" data-role="button" data-inline="true">中華職棒</a>
+                </div>
+            </div>
+    	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+    		<div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">首頁</a></li>
+                    <li><a href="#list" data-icon="grid" class="ui-btn-active ui-state-persist">內容列表</a></li>
+                </ul>
+            </div><!-- /navbar -->
+    	</div><!-- /footer -->
+    </div>
+
+
+
+
+    <!--rule-------------------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="rule">
+
+	    <div data-role="header">
+    		<h1>棒球網</h1>
+    	</div><!-- /header -->
+
+	    <div data-role="content" class="content" id="content-rule">
+    		<div align="center" class="iframe-container">
+                <iframe src="framepage/rule.html" style="height:100%;width:100%;border:none;"></iframe>
+            </div>
+    	</div><!-- /content -->
+
+	    <div data-role="footer"  data-position="fixed">
+    		<div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">首頁</a></li>
+                    <li><a href="#list" data-icon="grid">內容列表</a></li>
+                </ul>
+            </div><!-- /navbar -->
+    	</div><!-- /footer -->
+    </div>
+
+
+
+
+    <!--data-------------------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="data">
+
+	    <div data-role="header">
+    		<h1>棒球網</h1>
+    	</div><!-- /header -->
+
+	    <div data-role="content" class="content"  id="content-data">
+    		<div align="center" class="iframe-container">
+                <iframe src="framepage/data.html" style="height:100%;width:100%;border:none;"></iframe>
+            </div>
+    	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+    		<div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">首頁</a></li>
+                    <li><a href="#list" data-icon="grid">內容列表</a></li>
+                </ul>
+            </div><!-- /navbar -->
+    	</div><!-- /footer -->
+    </div>
+
+
+
+
+    <!--pitch-------------------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="pitch">
+
+	    <div data-role="header">
+    		<h1>棒球網</h1>
+    	</div><!-- /header -->
+
+	    <div data-role="content" class="content"  id="content-pitch">
+    		<div align="center" class="iframe-container">
+                <iframe src="framepage/pitch.html" style="height:100%;width:100%;border:none;"></iframe>
+            </div>
+    	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+    		<div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">首頁</a></li>
+                    <li><a href="#list" data-icon="grid">內容列表</a></li>
+                </ul>
+            </div><!-- /navbar -->
+    	</div><!-- /footer -->
+    </div>
+
+
+
+
+    <!--cpbl-------------------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="cpbl">
+
+	    <div data-role="header">
+    		<h1>棒球網</h1>
+    	</div><!-- /header -->
+
+	    <div data-role="content" class="content" id="content-cpbl">
+    		<div align="center" class="iframe-container">
+                <iframe src="framepage/cpbl.html" style="height:100%;width:100%;border:none;"></iframe>
+            </div>
+    	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+    		<div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">首頁</a></li>
+                    <li><a href="#list" data-icon="grid">內容列表</a></li>
+                </ul>
+            </div><!-- /navbar -->
+    	</div><!-- /footer -->
+    </div>
+
+
+
+
+    
+
+    <script src="index-main.js"></script>
+
+    </body>
+</html>
