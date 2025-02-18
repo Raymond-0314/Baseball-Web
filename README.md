@@ -1,4 +1,5 @@
 # Baseball-Web
 
--Baseball Web - A web introducing baseball
--School project
+Baseball Web - A web introducing baseball
+
+School project
